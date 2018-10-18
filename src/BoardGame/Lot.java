@@ -10,8 +10,8 @@ public class Lot extends Field {
     public Lot(int number, String name, int value, String color) {
         super(number, name);
         this.value = value;
-        this.color=color;
-        isOwned=false;
+        this.color = color;
+        isOwned = false;
         numberOfHouses = 0;
 
     }
@@ -46,6 +46,6 @@ public class Lot extends Field {
 
     public void setNumberOfHouses(int numberOfHouses) {
         this.numberOfHouses = numberOfHouses;
-        setValue(this.value*(this.numberOfHouses+1));
+        setValue(this.value * (this.numberOfHouses + 1));
     }
 }

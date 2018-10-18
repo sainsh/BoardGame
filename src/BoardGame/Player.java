@@ -32,14 +32,15 @@ public class Player {
         this.money += money;
     }
 
-    public void removeProperty(Lot property){
-        for(Lot lot: properties){
-            if(lot.equals(property)){
+    public void removeProperty(Lot property) {
+        for (Lot lot : properties) {
+            if (lot.equals(property)) {
                 properties.remove(lot);
             }
         }
     }
-    public void addProperty(Lot property){
+
+    public void addProperty(Lot property) {
         properties.add(property);
     }
 }

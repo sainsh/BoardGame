@@ -10,22 +10,21 @@ public class Logic {
 
     private List<Player> players = new ArrayList<Player>();
 
-    private boolean  gameRunning = true;
+    private boolean gameRunning = true;
 
     private int roundCounter = 1;
 
 
-
-    public Logic(){
+    public Logic() {
 
     }
 
-    public void run(){
+    public void run() {
 
         setup();
 
-        while(gameRunning) {
-            System.out.printf("Round number %d start \n",roundCounter);
+        while (gameRunning) {
+            System.out.printf("Round number %d start \n", roundCounter);
             round();
 
 
@@ -36,12 +35,12 @@ public class Logic {
     }
 
 
-    public void setup(){
+    public void setup() {
         System.out.println("Welcome to My Board Game!!\n");
 
         System.out.print("How many players are going to play today?");
         numberOfPlayers = in.nextInt();
-        while(numberOfPlayers < 2 ){
+        while (numberOfPlayers < 2) {
 
             System.out.println("You need 2 or more players to play this game. \n");
             System.out.print("how many players are going to play today?");
@@ -49,9 +48,9 @@ public class Logic {
 
         }
 
-        for(int i = 0; i < numberOfPlayers; i++){ // make new players
+        for (int i = 0; i < numberOfPlayers; i++) { // make new players
 
-            System.out.printf("player %d\'s name: ", i+1);
+            System.out.printf("player %d\'s name: ", i + 1);
 
             players.add(new Player(in.next()));
 
@@ -60,10 +59,11 @@ public class Logic {
 
 
     }
-    public void round(){
 
-        for(Player player: players){
-            System.out.printf("%s\'s turn\n",player.getName());
+    public void round() {
+
+        for (Player player : players) {
+            System.out.printf("%s\'s turn\n", player.getName());
 
             move();
 
@@ -71,11 +71,11 @@ public class Logic {
 
     }
 
-    public void move(){
+    public void move() {
 
     }
 
-    public void end(){
+    public void end() {
 
     }
 }
