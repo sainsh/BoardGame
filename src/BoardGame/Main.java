@@ -1,9 +1,28 @@
 package BoardGame;
 
+
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+
+        //start up
+
+        Logic logic = new Logic();
+        logic.run();
+
+
+
+
+
+
+
+
+
 
     }
+
 }
