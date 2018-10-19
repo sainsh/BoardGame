@@ -14,10 +14,10 @@ public class Board {
 
             fieldType = Math.random();
             if (fieldType < 0.5) {
-                playBoard.add(new Lot(i, Integer.toString(i), (int) Math.random() * 8000 + 1, Integer.toString((int) Math.random() + 8)));
+                playBoard.add(new Lot(i, Integer.toString(i), (int) (Math.random() * 8000 + 1), Integer.toString((int)( Math.random() * 8.0))));
 
             } else {
-                playBoard.add(new SpecialField(i, Integer.toString(i), (int) Math.random() * 4000 - 2000, Integer.toString(i)));
+                playBoard.add(new SpecialField(i, Integer.toString(i), (int) (Math.random() * 4000 - 2000), Integer.toString(i)));
 
             }
 

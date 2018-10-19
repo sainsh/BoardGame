@@ -93,9 +93,28 @@ public class Logic {
         } else {
             player.setFieldSpace(player.getFieldSpace() + diceRoll - boardSize);
         }
-        if(board.currentField(player.getFieldSpace()).getClass() == SpecialField.class)
-        System.out.printf("You landed on %s which is: %s\n", board.currentField(player.getFieldSpace()).getName(), ((SpecialField)board.currentField(player.getFieldSpace())).getText());
+        if (board.currentField(player.getFieldSpace()).getClass() == SpecialField.class) {
+            System.out.printf("You landed on %s which is: %s\n", board.currentField(player.getFieldSpace()).getName(), ((SpecialField) board.currentField(player.getFieldSpace())).getText());
+        } else if(board.currentField(player.getFieldSpace()).getClass() == Lot.class){
 
+            System.out.printf("You landed on %s which is: %s\n", board.currentField(player.getFieldSpace()).getName(), ((Lot) board.currentField(player.getFieldSpace())).getColor());
+
+            if(((Lot)board.currentField(player.getFieldSpace())).isOwned()){
+
+                System.out.printf("This lot is owned by %s\n",((Lot)board.currentField(player.getFieldSpace())).getOwner());
+                System.out.printf("pay %d to %s",((Lot)board.currentField(player.getFieldSpace())).getValue(),((Lot)board.currentField(player.getFieldSpace())).getOwner());
+
+
+            }else {
+                System.out.printf("This lot is not owned\n do you want to buy it at %d? y/n ",((Lot)board.currentField(player.getFieldSpace())).getValue());
+                if(in.next().equals("y") ){
+
+                }
+            }
+
+
+
+        }
 
     }
 

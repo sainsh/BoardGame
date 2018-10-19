@@ -6,6 +6,7 @@ public class Lot extends Field {
     private String color;
     private boolean isOwned;
     private int numberOfHouses;
+    private Player owner;
 
     public Lot(int number, String name, int value, String color) {
         super(number, name);
@@ -13,6 +14,7 @@ public class Lot extends Field {
         this.color = color;
         isOwned = false;
         numberOfHouses = 0;
+        owner = null;
 
     }
 
@@ -36,8 +38,9 @@ public class Lot extends Field {
         return isOwned;
     }
 
-    public void setOwned(boolean owned) {
+    public void setOwned(boolean owned, Player owner) {
         isOwned = owned;
+        setOwner(owner);
     }
 
     public int getNumberOfHouses() {
@@ -47,5 +50,13 @@ public class Lot extends Field {
     public void setNumberOfHouses(int numberOfHouses) {
         this.numberOfHouses = numberOfHouses;
         setValue(this.value * (this.numberOfHouses + 1));
+    }
+
+    public Player getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Player owner) {
+        this.owner = owner;
     }
 }
