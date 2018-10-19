@@ -93,7 +93,8 @@ public class Logic {
         } else {
             player.setFieldSpace(player.getFieldSpace() + diceRoll - boardSize);
         }
-        System.out.printf("You landed on %s which is a %s\n", board.currentField(player.getFieldSpace()).getName(), board.currentField(player.getFieldSpace()).getClass().toString());
+        if(board.currentField(player.getFieldSpace()).getClass() == SpecialField.class)
+        System.out.printf("You landed on %s which is: %s\n", board.currentField(player.getFieldSpace()).getName(), ((SpecialField)board.currentField(player.getFieldSpace())).getText());
 
 
     }
