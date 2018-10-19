@@ -9,10 +9,12 @@ public class Player {
     private String name;
     private int money;
     private List<Lot> properties = new ArrayList<Lot>();
+    private int fieldSpace;
 
     public Player(String name) {
         this.name = name;
-        money = 10000;
+        this.money = 10000;
+        this.fieldSpace = 1;
 
     }
 
@@ -42,5 +44,13 @@ public class Player {
 
     public void addProperty(Lot property) {
         properties.add(property);
+    }
+
+    public int getFieldSpace() {
+        return fieldSpace;
+    }
+
+    public void setFieldSpace(int fieldSpace) {
+        this.fieldSpace = fieldSpace;
     }
 }
