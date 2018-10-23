@@ -38,8 +38,8 @@ public class Lot extends Field {
         return isOwned;
     }
 
-    public void setOwned(boolean owned, Player owner) {
-        isOwned = owned;
+    public void buy(Player owner) {
+        this.isOwned = true;
         setOwner(owner);
     }
 
@@ -56,7 +56,12 @@ public class Lot extends Field {
         return owner;
     }
 
-    public void setOwner(Player owner) {
+    private void setOwner(Player owner) {
         this.owner = owner;
+    }
+
+    public void sell(){
+        this.owner = null;
+        this.isOwned=false;
     }
 }

@@ -76,7 +76,7 @@ public class Logic {
             System.out.printf("%s\'s turn\n", player.getName());
 
             move(player);
-
+            System.out.println();
             if (roundCounter == 300) {
                 gameRunning = false;
             }
@@ -88,33 +88,64 @@ public class Logic {
     public void move(Player player) {
         diceRoll = dice.rollDice();
         System.out.printf("you rolled : %d \n", diceRoll);
-        if (player.getFieldSpace() + diceRoll < boardSize) {
+        if (player.getFieldSpace() + diceRoll <= boardSize) {
             player.setFieldSpace(player.getFieldSpace() + diceRoll);
         } else {
-            player.setFieldSpace(player.getFieldSpace() + diceRoll - boardSize);
-        }
-        if (board.currentField(player.getFieldSpace()).getClass() == SpecialField.class) {
-            System.out.printf("You landed on %s which is: %s\n", board.currentField(player.getFieldSpace()).getName(), ((SpecialField) board.currentField(player.getFieldSpace())).getText());
-        } else if(board.currentField(player.getFieldSpace()).getClass() == Lot.class){
-
-            System.out.printf("You landed on %s which is: %s\n", board.currentField(player.getFieldSpace()).getName(), ((Lot) board.currentField(player.getFieldSpace())).getColor());
-
-            if(((Lot)board.currentField(player.getFieldSpace())).isOwned()){
-
-                System.out.printf("This lot is owned by %s\n",((Lot)board.currentField(player.getFieldSpace())).getOwner());
-                System.out.printf("pay %d to %s",((Lot)board.currentField(player.getFieldSpace())).getValue(),((Lot)board.currentField(player.getFieldSpace())).getOwner());
-
-
-            }else {
-                System.out.printf("This lot is not owned\n do you want to buy it at %d? y/n ",((Lot)board.currentField(player.getFieldSpace())).getValue());
-                if(in.next().equals("y") ){
-
-                }
+            while(player.getFieldSpace() >boardSize) {
+                player.setFieldSpace(player.getFieldSpace() + diceRoll - boardSize);
             }
 
-
-
         }
+        if (board.currentField(player.getFieldSpace()-1).getClass() == SpecialField.class) {
+
+            landOnSpecialField(player, (SpecialField) board.currentField(player.getFieldSpace()-1));
+
+        } else if (board.currentField(player.getFieldSpace()-1).getClass() == Lot.class) {
+
+            landOnLot(player, (Lot) board.currentField(player.getFieldSpace()-1));
+        }
+
+
+    }
+
+    public void landOnLot(Player player, Lot lot) {
+        System.out.printf("You landed on %s which is: %s\n", lot.getName(), lot.getColor());
+
+        if (lot.isOwned()) {
+
+            if (player == lot.getOwner()) {
+
+                System.out.printf("You are the owner of this lot\ndo you want to buy (a) house(s)? y/n ");
+
+                if(in.next().equals("y")){
+                    System.out.printf("\nHow many house do you want to buy? 1-5 ");
+                   // int houses = in.nextInt();
+                   // if(houses <= 5 ){
+
+                   // }
+
+                    System.out.println();
+                }
+
+            } else {
+
+                System.out.printf("This lot is owned by %s\n", lot.getOwner().getName());
+                System.out.printf("pay %d to %s", lot.getValue(), lot.getOwner().getName());
+                System.out.println();
+            }
+
+        } else {
+            System.out.printf("This lot is not owned\n do you want to buy it at %d? y/n ", lot.getValue());
+            if (in.next().equals("y")) {
+                lot.buy(player);
+            }
+            System.out.println();
+        }
+    }
+
+    public void landOnSpecialField(Player player, SpecialField field) {
+
+        System.out.printf("You landed on %s which is: %s\n", field.getName(), field.getText());
 
     }
 
