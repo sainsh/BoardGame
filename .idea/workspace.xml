@@ -4,7 +4,6 @@
     <list default="true" id="a78fa2f4-90ff-4a69-89a0-6d2434d2daf1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoardGame/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Logic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardGame/Lot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Lot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,14 +38,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5214" />
-          <entry key="txt" value="598" />
+          <entry key="java" value="5272" />
+          <entry key="txt" value="718" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5214" />
-          <entry key="PLAIN_TEXT" value="598" />
+          <entry key="JAVA" value="5272" />
+          <entry key="PLAIN_TEXT" value="718" />
         </counts>
       </usages-collector>
     </session>
@@ -68,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Logic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="304">
+              <caret line="160" column="105" lean-forward="true" selection-start-line="160" selection-start-column="105" selection-end-line="160" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -232,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540371928672" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540372327210" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -279,7 +278,7 @@
       <workItem from="1539872383216" duration="2911000" />
       <workItem from="1539935880470" duration="7080000" />
       <workItem from="1540278083020" duration="2482000" />
-      <workItem from="1540370476218" duration="1445000" />
+      <workItem from="1540370476218" duration="2436000" />
     </task>
     <task id="LOCAL-00001" summary="Start of project">
       <created>1539279840554</created>
@@ -330,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540280533472</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added buy house method, added check for player money, if below 0 game end and a winner is found">
+      <created>1540372078934</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1540372078934</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20730000" />
+    <option name="totallyTimeSpent" value="21721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,8 +355,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30911064" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30911064" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -384,19 +390,8 @@
     <MESSAGE value="added random text to SpecialFields" />
     <MESSAGE value="fixed math.random to int bugs. added landing on lot or specialfield." />
     <MESSAGE value="split land on from move method to 2 land on methods in Logic class, fixed issue with index of board when at start of index and end of index, changed setIsOwned to buy and made a sell in Lot class" />
-    <option name="LAST_COMMIT_MESSAGE" value="split land on from move method to 2 land on methods in Logic class, fixed issue with index of board when at start of index and end of index, changed setIsOwned to buy and made a sell in Lot class" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BoardGame/Logic.java</url>
-          <line>164</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added buy house method, added check for player money, if below 0 game end and a winner is found" />
+    <option name="LAST_COMMIT_MESSAGE" value="added buy house method, added check for player money, if below 0 game end and a winner is found" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/BoardGame/Main.java">
@@ -477,8 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BoardGame/Logic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="304">
+          <caret line="160" column="105" lean-forward="true" selection-start-line="160" selection-start-column="105" selection-end-line="160" selection-end-column="105" />
         </state>
       </provider>
     </entry>

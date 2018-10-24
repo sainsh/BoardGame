@@ -158,6 +158,8 @@ public class Logic {
 
     public void buyHouses(Player player, Lot lot) {
 
+        System.out.printf("you have %d and each house costs %d\n",player.getMoney(),lot.getHousePrice());
+
         System.out.printf("how many? 1-%s", 5 - lot.getNumberOfHouses());
 
         int numberOfHouses = in.nextInt();
