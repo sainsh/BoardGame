@@ -20,6 +20,8 @@ public class Logic {
     private Board board;
     private int boardSize;
 
+    private Player winner;
+
 
     public Logic() {
 
@@ -77,6 +79,9 @@ public class Logic {
 
             move(player);
             System.out.println();
+            if (player.getMoney() <= 0) {
+                gameRunning = false;
+            }
             if (roundCounter == 300) {
                 gameRunning = false;
             }
@@ -91,18 +96,18 @@ public class Logic {
         if (player.getFieldSpace() + diceRoll <= boardSize) {
             player.setFieldSpace(player.getFieldSpace() + diceRoll);
         } else {
-            while(player.getFieldSpace() >boardSize) {
+            while (player.getFieldSpace() > boardSize) {
                 player.setFieldSpace(player.getFieldSpace() + diceRoll - boardSize);
             }
 
         }
-        if (board.currentField(player.getFieldSpace()-1).getClass() == SpecialField.class) {
+        if (board.currentField(player.getFieldSpace() - 1).getClass() == SpecialField.class) {
 
-            landOnSpecialField(player, (SpecialField) board.currentField(player.getFieldSpace()-1));
+            landOnSpecialField(player, (SpecialField) board.currentField(player.getFieldSpace() - 1));
 
-        } else if (board.currentField(player.getFieldSpace()-1).getClass() == Lot.class) {
+        } else if (board.currentField(player.getFieldSpace() - 1).getClass() == Lot.class) {
 
-            landOnLot(player, (Lot) board.currentField(player.getFieldSpace()-1));
+            landOnLot(player, (Lot) board.currentField(player.getFieldSpace() - 1));
         }
 
 
@@ -115,16 +120,17 @@ public class Logic {
 
             if (player == lot.getOwner()) {
 
-                System.out.printf("You are the owner of this lot\ndo you want to buy (a) house(s)? y/n ");
+                System.out.printf("You are the owner of this lot\n");
 
-                if(in.next().equals("y")){
-                    System.out.printf("\nHow many house do you want to buy? 1-5 ");
-                   // int houses = in.nextInt();
-                   // if(houses <= 5 ){
+                if (lot.getNumberOfHouses() < 5) {
 
-                   // }
+                    System.out.println("do you want to buy houses for this lot? y/n");
 
-                    System.out.println();
+                    if (in.next().equals("y")) {
+
+                        buyHouses(player, lot);
+
+                    }
                 }
 
             } else {
@@ -138,6 +144,7 @@ public class Logic {
             System.out.printf("This lot is not owned\n do you want to buy it at %d? y/n ", lot.getValue());
             if (in.next().equals("y")) {
                 lot.buy(player);
+                player.adjustMoney(-lot.getValue());
             }
             System.out.println();
         }
@@ -149,12 +156,37 @@ public class Logic {
 
     }
 
+    public void buyHouses(Player player, Lot lot) {
+
+        System.out.printf("how many? 1-%s", 5 - lot.getNumberOfHouses());
+
+        int numberOfHouses = in.nextInt();
+
+        if (numberOfHouses <= 5 - lot.getNumberOfHouses()) {
+            lot.setNumberOfHouses(lot.getNumberOfHouses() + numberOfHouses);
+            player.adjustMoney(-(int) (lot.getHousePrice() * numberOfHouses));
+
+        } else {
+            System.out.println("no houses bought");
+        }
+    }
+
     public void end() {
 
         System.out.println("End of game");
         for (Player player : players) {
             System.out.printf("%s has %d\n", player.getName(), player.getMoney());
+
         }
+        winner = players.get(0);
+        for (Player p : players) {
+            if (p.getMoney() > winner.getMoney()) {
+                winner = p;
+            }
+
+        }
+        System.out.printf("The winner is %s", winner.getName());
+
 
     }
 }
