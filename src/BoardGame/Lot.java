@@ -3,13 +3,13 @@ package BoardGame;
 public class Lot extends Field {
 
     private int value;
-    private String color;
+    private String color;   //is what chain of Lots this lot is part of , currently not used
     private boolean isOwned;
     private int numberOfHouses;
     private Player owner;
     private double housePrice;
 
-    public Lot(int number, String name, int value, String color) {
+    public Lot(int number, String name, int value, String color) {  // a lot is a field a player can own
         super(number, name);
         this.value = value;
         this.color = color;
@@ -40,7 +40,7 @@ public class Lot extends Field {
         return isOwned;
     }
 
-    public void buy(Player owner) {
+    public void buy(Player owner) { //sets player as owner and isOwned as true
         this.isOwned = true;
         setOwner(owner);
     }
@@ -49,7 +49,7 @@ public class Lot extends Field {
         return numberOfHouses;
     }
 
-    public void setNumberOfHouses(int numberOfHouses) {
+    public void setNumberOfHouses(int numberOfHouses) { //changes value of lot by how many houses are on this lot
         this.numberOfHouses = numberOfHouses;
         setValue(this.value * (this.numberOfHouses + 1));
     }
@@ -62,7 +62,7 @@ public class Lot extends Field {
         this.owner = owner;
     }
 
-    public void sell(){
+    public void sell(){     // frees up the lot so another player can buy the lot
         this.owner = null;
         this.isOwned=false;
     }

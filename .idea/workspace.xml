@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a78fa2f4-90ff-4a69-89a0-6d2434d2daf1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoardGame/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/Lot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Lot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardGame/SpecialField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardGame/SpecialField.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +23,14 @@
     <session id="981218051">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.43" value="3" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -38,14 +45,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5272" />
-          <entry key="txt" value="718" />
+          <entry key="java" value="8375" />
+          <entry key="txt" value="796" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5272" />
-          <entry key="PLAIN_TEXT" value="718" />
+          <entry key="JAVA" value="8375" />
+          <entry key="PLAIN_TEXT" value="796" />
         </counts>
       </usages-collector>
     </session>
@@ -55,20 +62,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Logic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="160" column="105" lean-forward="true" selection-start-line="160" selection-start-column="105" selection-end-line="160" selection-end-column="105" />
+            <state relative-caret-position="687">
+              <caret line="192" column="83" selection-start-line="192" selection-start-column="83" selection-end-line="192" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -76,14 +80,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="748">
+              <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#580#581#0" expanded="true" />
+                <element signature="e#615#616#0" expanded="true" />
                 <element signature="e#929#930#0" expanded="true" />
                 <element signature="e#962#963#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
                 <element signature="e#1055#1056#0" expanded="true" />
               </folding>
             </state>
@@ -94,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Board.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Dice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="204">
+              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -114,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="272">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#241#242#0" expanded="true" />
                 <element signature="e#275#276#0" expanded="true" />
@@ -127,13 +131,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/Lot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="551">
+              <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
               <folding>
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#1433#1434#0" expanded="true" />
                 <element signature="e#1466#1467#0" expanded="true" />
                 <element signature="e#1518#1519#0" expanded="true" />
                 <element signature="e#1562#1563#0" expanded="true" />
@@ -142,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BoardGame/SpecialField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="130" selection-start-line="7" selection-start-column="130" selection-end-line="7" selection-end-column="130" />
+            <state relative-caret-position="289">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -166,14 +167,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BoardGame/Field.java" />
+        <option value="$PROJECT_DIR$/src/BoardGame/Logic.java" />
         <option value="$PROJECT_DIR$/src/BoardGame/Main.java" />
         <option value="$PROJECT_DIR$/src/BoardGame/Player.java" />
-        <option value="$PROJECT_DIR$/src/BoardGame/Dice.java" />
-        <option value="$PROJECT_DIR$/src/BoardGame/SpecialField.java" />
         <option value="$PROJECT_DIR$/src/BoardGame/Board.java" />
+        <option value="$PROJECT_DIR$/src/BoardGame/Dice.java" />
+        <option value="$PROJECT_DIR$/src/BoardGame/Field.java" />
         <option value="$PROJECT_DIR$/src/BoardGame/Lot.java" />
-        <option value="$PROJECT_DIR$/src/BoardGame/Logic.java" />
+        <option value="$PROJECT_DIR$/src/BoardGame/SpecialField.java" />
       </list>
     </option>
   </component>
@@ -194,8 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,12 +225,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540372327210" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540373495005" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -278,7 +279,8 @@
       <workItem from="1539872383216" duration="2911000" />
       <workItem from="1539935880470" duration="7080000" />
       <workItem from="1540278083020" duration="2482000" />
-      <workItem from="1540370476218" duration="2436000" />
+      <workItem from="1540370476218" duration="2488000" />
+      <workItem from="1540457399890" duration="1751000" />
     </task>
     <task id="LOCAL-00001" summary="Start of project">
       <created>1539279840554</created>
@@ -336,17 +338,24 @@
       <option name="project" value="LOCAL" />
       <updated>1540372078934</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added house prices and player money to buyhouses method">
+      <created>1540373532769</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540373532769</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21721000" />
+    <option name="totallyTimeSpent" value="23524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,7 +364,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30911064" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30911064" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -391,13 +400,43 @@
     <MESSAGE value="fixed math.random to int bugs. added landing on lot or specialfield." />
     <MESSAGE value="split land on from move method to 2 land on methods in Logic class, fixed issue with index of board when at start of index and end of index, changed setIsOwned to buy and made a sell in Lot class" />
     <MESSAGE value="added buy house method, added check for player money, if below 0 game end and a winner is found" />
-    <option name="LAST_COMMIT_MESSAGE" value="added buy house method, added check for player money, if below 0 game end and a winner is found" />
+    <MESSAGE value="added house prices and player money to buyhouses method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added house prices and player money to buyhouses method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/BoardGame/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoardGame/Logic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="192" column="83" selection-start-line="192" selection-start-column="83" selection-end-line="192" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoardGame/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="52" column="66" selection-start-line="52" selection-start-column="66" selection-end-line="52" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#615#616#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BoardGame/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -406,15 +445,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BoardGame/Dice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="204">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BoardGame/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="272">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
@@ -422,32 +461,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardGame/SpecialField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="130" selection-start-line="7" selection-start-column="130" selection-end-line="7" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardGame/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BoardGame/Lot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="551">
+          <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
           <folding>
-            <element signature="e#519#520#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
             <element signature="e#1466#1467#0" expanded="true" />
             <element signature="e#1518#1519#0" expanded="true" />
             <element signature="e#1562#1563#0" expanded="true" />
@@ -455,25 +474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardGame/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/BoardGame/SpecialField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BoardGame/Logic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="160" column="105" lean-forward="true" selection-start-line="160" selection-start-column="105" selection-end-line="160" selection-end-column="105" />
+        <state relative-caret-position="289">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
         </state>
       </provider>
     </entry>

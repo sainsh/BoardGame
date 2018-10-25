@@ -10,7 +10,7 @@ public class Dice {
 
     }
 
-    public int rollDice() {
+    public int rollDice() { // returns a roll of 2 6sided dice
 
         return rand.nextInt(6) + 1 + rand.nextInt(6) + 1;
     }

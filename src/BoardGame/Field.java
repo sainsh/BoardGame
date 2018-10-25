@@ -5,7 +5,7 @@ public class Field {
     private int fieldNumber;
     private String name;
 
-    public Field(int number, String name) {
+    public Field(int number, String name) { //both Lots and SpecialFields are Fields with name and number
         this.fieldNumber = number;
         this.name = name;
     }

@@ -1,8 +1,7 @@
 package BoardGame;
 
 
-import java.util.List;
-import java.util.Scanner;
+
 
 public class Main {
 
@@ -12,7 +11,7 @@ public class Main {
         //start up
 
         Logic logic = new Logic();
-        logic.run();
+        logic.run();    // runs the game
 
 
     }
